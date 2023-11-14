@@ -14,7 +14,7 @@ $(document).ready(function(){
 })
 
 
-// slide 1 recorrido
+// slide 1 recorrido - seccion 2
 
 let counter = 1;
 
@@ -33,3 +33,18 @@ async function getData() {
 }
 
 getData();
+
+
+//close-img - seccion 3
+
+const fullImgBox = document.getElementById("fullImgBox");
+fullImg = document.getElementById("fullImg");
+
+function openFullImg(reference) {
+    fullImgBox.style.display = "flex";
+    fullImg.src = reference
+}
+
+function closeImg() {
+    fullImgBox.style.display = "none";
+}

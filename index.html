@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,31 +13,42 @@
 </head>
 <body>
     <header>
-        <div class="container-nav">
-        <nav id ="nav" class="container">
-            <div class="logo">
-                <a class="desplazar img-logo" href="#inicio"><img src="" alt="logo"></a>
-                <p>Asociación Colombiana de Estudiantes Universitarios ACEU</p>
+
+
+        <div class="content">
+            <div class="menu container">
+                    <a class="desplazar" href="#inicio"><img src="" alt="logo"></a>
+                    <p>Asociación Colombiana de Estudiantes Universitarios</p>
+                    <input type="checkbox" id="menu">
+                    <label for="menu">
+                        <img src="/media/images/menu.png" class="menu-icono" alt="imgMenu">
+                    </label>
+
+                <nav class="nav-bar">
+                    <ul>
+                        <!-- logo-personal -->    
+                        <li><a class="desplazar" href="#inicio">Noticias</a></li>
+                        <li><a class="desplazar" href="#galery">Aceu</a></li>
+                        <li><a class="desplazar" href="#mision">Misión</a></li>
+                        <li><a class="desplazar" href="#redes">Siguenos</a></li>
+                    </ul>
+                </nav>
             </div>
-            <ul id="menu">
-                <!-- logo-personal -->    
-                <li><a class="desplazar" href="#inicio">Noticias</a></li>
-                <li><a class="desplazar" href="#galery">ACEU</a></li>
-                <li><a class="desplazar" href="#mision">Misión</a></li>
-                <li><a class="desplazar" href="#redes">Redes sociales</a></li>
-            </ul>
-        </nav>
         </div>
     </header>
         <!-- contenido-pagina -->
 
 
             <div class="contenido1-slide sections" id="inicio">
+
+                <h1 class="title1">Noticias</h1>
+
                 <div class="slider1">
 
-                    
+                    <h1>Noticias</h1>
                     <div class="slides">
-                        
+
+                            
                         <input type="radio" name="radio-btn" id="radio1">
                         <input type="radio" name="radio-btn" id="radio2">
                         <input type="radio" name="radio-btn" id="radio3">
@@ -45,6 +56,7 @@
 
                         <div class="slide first">
                             <img src="media/black.jpg" alt="">
+                            
                         </div>
                         <div class="slide">
                             <img src="media/blackboard.jpg" alt="">
@@ -62,8 +74,8 @@
                             <label for="radio2" class="manual-btn"></label>
                             <label for="radio3" class="manual-btn"></label>
                             <label for="radio4" class="manual-btn"></label>
-                        </div>       
-                </div>
+                        </div>   
+                    </div>
                 <div class="title">
                     <div class="div-title">
                         <h1>ACEU</h1>
@@ -77,49 +89,28 @@
             </div>
             <hr>
 
-            <!-- <div class="contenido3-slide sections" id="slider2">
-                <div class="slider2">
-                    <div>
-                        
-                    </div>
-                </div>
-                <p></p>
-            </div> -->
 
             <div class="contenido2-galery sections" id="galery">
-
-                <h1>Publicaciones</h1>
                 
-                <div class="cards">
-                    <div class="card">
-                        <img src="/media/blackboard.jpg" alt="">
-                    </div>
-                    <div class="card">
-                        <img src="/media/blackboard.jpg" alt="">
-                    </div>
-                    <div class="card">
-                        <img src="/media/blackboard.jpg" alt="">
-                    </div>
-                    <div class="card">
-                        <img src="/media/blackboard.jpg" alt="">
-                    </div>
+                <div class="full-img" id="fullImgBox">
+                    <img src="/media/black.jpg" id="fullImg" alt="img">
+                    <span onclick="closeImg()">X</span>
                 </div>
+
+                    <h1>Publicaciones</h1>
                 
+                <div class="img-galery">
+                    <img src="/media/black.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/blackboard.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/paper.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/pexels-adrien-olichon-2387793.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/pexels-harun-19040519.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/pexels-elijah-o'donnell-3473569.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/pexels-tom-swinnen-2249961.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/wall.jpg" onclick="openFullImg(this.src)" alt="img">
+                </div>
 
             </div>
-            
-
-
-
-
-
-
-
-
-
-
-
-
 
             <div class="contenido3-about sections" id="mision">
                 <div class="titulo">
@@ -130,15 +121,24 @@
                 <p></p>
             </div>
             
+
             <div class="contenido4-redes sections" id="redes">
-                <div class="titulo">
-                    <h1></h1> 
-                    <p></p>
+
+                <div class="contenido4">
+                    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque aliquid eius corrupti alias dolor saepe dolorem similique dicta earum consequatur.</h2>
                 </div>
-                <p></p>
+
+                <div class="red-social">
+                    <h2>Instagram</h2>
+                    <blockquote class="instagram-media" data-instgrm-version="7" >
+                        <a href="https://www.instagram.com/p/CzEQtVzrhSQ/?img_index=1"></a> 
+                        </blockquote>
+                        <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+                </div>
             </div>
 
         </div>
+
 
             <footer class="footer">
                 <div class="grupo1">
