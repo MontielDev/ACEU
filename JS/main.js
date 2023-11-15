@@ -27,14 +27,6 @@ setInterval(function() {
 }, 7000)
 
 
-async function getData() {
-    const res = await fetch ("https://console.cloudinary.com/pm/c-6383c532d2ab63fb4fc295f022e126/media-explorer/ACEU/Galeria");
-    console.log(res);
-}
-
-getData();
-
-
 //close-img - seccion 3
 
 const fullImgBox = document.getElementById("fullImgBox");
