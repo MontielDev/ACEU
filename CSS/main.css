@@ -53,11 +53,18 @@ body::-webkit-scrollbar-thumb {
     padding: 18px 10%;
     font-weight: bold;
 }
-.logo img {width: 40px;}
-.menu {display: flex;}
+.logo img {
+    width: 40px;
+}
+
+.menu {
+    display: flex;
+}
+
 .menu li {
     padding-left: 40px;
 }
+
 .menu li a {
     display: inline-block;
     color: var(--blanco);
@@ -66,6 +73,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     text-transform: uppercase;
 }
+
 .menu li a::after {
     content: "";
     position: absolute;
@@ -76,7 +84,11 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--blanco);
     transition: 0.15s ease-in-out;
 }
-.menu li a:hover:after {width: 100%;}
+
+.menu li a:hover:after {
+    width: 100%;
+}
+
 .open-menu , .close-menu {
     position: absolute;
     color: var(--blanco);
@@ -84,16 +96,19 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5rem;
     display: none;
 }
+
 .open-menu {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
 }
+
 .close-menu {
     top: 20px;
     right: 20px;
     font-size: 35px;
 }
+
 #check {display: none;}
 @media(max-width: 610px){
     .menu {
@@ -385,13 +400,13 @@ body::-webkit-scrollbar-thumb {
     background-color: rgba(230, 230, 230, 0.279);
 }
 
-.contenido4 h2 {
+.contenido4 p {
     padding: 20px;
     overflow: hidden;
     height: 100%;
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .red-social {
@@ -448,7 +463,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer .grupo1 .box figure img {
-    width: 250px;
+    width: 150px;
 }
 
 .footer .grupo1 .box h2 {
@@ -540,7 +555,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .contenido1-slide .title1 {
-        margin-top: 15%;
+        margin-top: 60px;
     }
 
     .contenido1-slide {
@@ -563,6 +578,7 @@ body::-webkit-scrollbar-thumb {
     .contenido1-slide .title1 {
         display: flex;
         justify-content: center;
+        align-items: center;
         /* margin-top: 15%; */
         font-size: 26px;
         width: 90%;
@@ -610,10 +626,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media(max-width:824px) {
-
-    .contenido1-slide .title1 {
-        margin-top: 15%;
-    }
 
     .contenido1-slide .title h1 {
         font-size: 24px;

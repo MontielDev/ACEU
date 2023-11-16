@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* colors */
+:root {
+    --blanco: #fff;
+    --blanco2: #e5e5e5;
+    --negro: #000;
+    --azul-Oscuro: #0a141d;
+    --azul-oscuro2: #0d2033;
+    --aqua: aqua;
+}
+
+body {
+    width: 100vw;
+    background-color: var(--blanco);
+}
+
+body h1 {
+    text-transform: uppercase;
+}
+
+body hr {
+    margin: 0 10%;
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+    background-color: transparent;
+    
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--blanco2);
+    border-radius: 20px;
+}
+
+/* Nav */
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.775);
+    padding: 18px 10%;
+    font-weight: bold;
+}
+.logo img {
+    width: 40px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 40px;
+}
+
+.menu li a {
+    display: inline-block;
+    color: var(--blanco);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--blanco);
+    transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {
+    width: 100%;
+}
+
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--blanco);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+    font-size: 35px;
+}
+
+#check {display: none;}
+@media(max-width: 610px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+
+.section-doc {
+    display: flex;
+    min-height: 100vh;
+ height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 64px;
+    width: 90%;
+    padding: 20px 0;
+    border: 1px solid rgba(23, 66, 108, 0.085);
+    border-radius: 5px;
+    background-color: rgba(230, 230, 230, 0.279);
+    overflow: hidden;
+}
+
+.title h1 {
+    text-align: center;
+    height: auto;
+    font-size: 26px;
+}
+
+.container-docs {
+    width: 50vw;
+    padding: 25px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    border: 1px solid rgba(23, 66, 108, 0.085);
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 5px;
+    margin: 50px 0;
+}
+
+.container-docs .pdf {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background-color: #00000037; */
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container-docs .pdf a {
+    overflow: hidden;
+    width: 90px;
+}
+
+.container-docs .pdf img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-docs .pdf {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    background-color: var(--azul-Oscuro);
+    overflow: hidden;
+    bottom: ;
+}
+
+.footer .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.footer .grupo1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grupo1 .box figure img {
+    width: 150px;
+}
+
+.footer .grupo1 .box h2 {
+    color: var(--blanco);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer .grupo1 .box p {
+    color: var(--blanco2);
+    margin-bottom: 10px;
+}
+
+.footer .grupo1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: var(--blanco);
+    margin-right: 10px;
+    background-color: var(--azul-oscuro2);
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.footer .grupo1 .red-social a:hover {
+    color: var(--aqua);
+}
+
+.footer .grupo-2 {
+    background-color: var(--azul-oscuro2);
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.footer .grupo-2 small {
+    font-size: 15px;
+}
+
+
+
+
+/* Media Querys - Diseño responsive */
+
+@media screen and (max-width:1302px) {
+    .footer {
+        height: auto;
+    }
+}
+
+
+@media(max-width:1004px) {
+
+    .nav-bar {
+        width: 100%;
+        padding: 12px 50px;
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+
+}
+
+@media(max-width:824px) {
+
+    .title {
+        width: 100%;
+    }
+
+    .footer .grupo1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .footer .box:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .grupo1 .red-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.2rem;
+    }
+}
+
+@media(max-width:500px) {
+
+    .container-docs {
+        width: 90%;
+        padding: 25px;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 25px;
+        border: 1px solid rgba(23, 66, 108, 0.085);
+        box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.1);
+        border-radius: 5px;
+        margin: 50px 0;
+    }
+
+    .footer .grupo1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
