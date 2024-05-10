@@ -67,7 +67,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     padding: 20px 0;
     color: var(--blanco);
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .container-docs {
@@ -76,7 +76,7 @@ body::-webkit-scrollbar-thumb {
     padding: 25px;
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     gap: 25px;
     background-color: rgba(0, 0, 0, 0.674);
     border: 1px solid rgba(23, 66, 108, 0.085);
@@ -85,6 +85,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: 80px 10px;
     margin: 50px 0;
     color: var(--blanco);
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(500px, auto);
 }
 
 .container-docs .pdf {
@@ -95,8 +99,12 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     /* background-color: #00000037; */
     justify-items: center;
+    justify-content: center;
     align-items: center;
     gap: 30px;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
 }
 
 .container-docs .pdf a {
@@ -105,7 +113,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container-docs .pdf img {
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
@@ -114,8 +122,51 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
 }
 
+.cv {
+    display: flex;
+}
 
+.cv button {
+    background-color: transparent;
+    border: 2px solid var(--blanco);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 18px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 20px 5px;
+}
 
+.cv button a {
+    color: var(--blanco);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 5px;
+}
+
+.cv button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--negro);
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 20px 5px;
+}
+
+button:hover .overlay {
+    width: 100%;
+    color: var(--blanco2);
+}
+
+.cv button a:hover {
+    color: var(--blanco2);
+}
 
 
 .footer {
@@ -192,6 +243,12 @@ body::-webkit-scrollbar-thumb {
 
 
 /* Media Querys - Diseño responsive */
+
+@media screen and (max-width:1447px) {
+    .container-docs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media screen and (max-width:1302px) {
     .footer {
@@ -286,6 +343,12 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
         justify-content: center;
         gap: 1.2rem;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .container-docs {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
