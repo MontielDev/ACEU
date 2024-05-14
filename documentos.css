@@ -88,7 +88,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(500px, auto);
+    grid-auto-rows: minmax(400px, auto);
 }
 
 .container-docs .pdf {
@@ -349,22 +349,19 @@ button:hover .overlay {
 @media screen and (max-width:760px) {
     .container-docs {
         grid-template-columns: repeat(1, 1fr);
+        width: 99%;
     }
 }
 
 @media(max-width:500px) {
 
     .container-docs {
-        width: 90%;
-        padding: 25px;
-        display: grid;
-        justify-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 25px;
-        border: 1px solid rgba(23, 66, 108, 0.085);
-        box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.1);
-        border-radius: 5px;
-        margin: 50px 0;
+        width: 99%;
+        padding: 0px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 10px;
+        border-radius: 10px;
+        margin: 20px 0;
     }
 
     .footer .grupo1 {
