@@ -982,6 +982,10 @@ body::-webkit-scrollbar-thumb {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 15px;
     }
+
+    .img-galery img:hover {
+        transform: scale(1);
+    }
 }
 
 @media(max-width:500px) {
