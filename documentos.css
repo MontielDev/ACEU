@@ -259,10 +259,6 @@ button:hover .overlay {
 
 @media(max-width:1004px) {
 
-    nav {
-        display: none;
-    }
-
     .nav-responsive {
         display: block;
     }
@@ -318,7 +314,9 @@ button:hover .overlay {
 
 @media(max-width:824px) {
 
-
+    nav {
+        display: flex;
+    }
 
     .title {
         width: 100%;

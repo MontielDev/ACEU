@@ -297,7 +297,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     padding: 25px 0px;
     color: var(--blanco);
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 1px;
     font-weight: bold;
     text-transform: uppercase;
@@ -434,7 +434,7 @@ body::-webkit-scrollbar-thumb {
     min-height: 100vh;
     height: auto;
     padding: 50px 0;
-    background: linear-gradient(rgba(5, 5, 5, 0.1), rgba(71, 28, 139, 0.6)), url(/media/fondos/fondo-2.avif) no-repeat center center;
+    background: linear-gradient(rgba(5, 5, 5, 0.4), rgba(0, 0, 0, 0.9)), url(/media/fondos/fondo-2.avif) no-repeat center center;
     background-size: cover;
     /* background-attachment: fixed; */
 }
@@ -443,7 +443,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     margin-top: 30px;
     width: 50%;
-    font-size: 24px;
+    font-size: 20px;
     background-color: rgba(0, 0, 0, 0.674);
     border-radius: 30px 5px;
     padding: 20px 0;
@@ -488,7 +488,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .full-img img {
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.204);
@@ -521,7 +521,7 @@ body::-webkit-scrollbar-thumb {
     padding: 10px 30px;
     color: var(--blanco);
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
     background: linear-gradient(rgba(39, 39, 39, 0.4), rgba(39, 39, 39, 4.0)), url(/media/fondos/prot-aceu.jpeg) no-repeat center center;
     background-size: cover;
@@ -693,10 +693,6 @@ body::-webkit-scrollbar-thumb {
 
     .contenido2-galery {
         height: auto;
-    }
-
-    .contenido2-galery h1 {
-        font-size: 24px;
     }
 
     .contenido3-about .titulo p {
