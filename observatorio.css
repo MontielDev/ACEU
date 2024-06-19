@@ -18,6 +18,7 @@
     background-image: url(/media/fondos/fondo2.jpg);
     background-attachment: fixed;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .contenido1 .title {
@@ -54,12 +55,12 @@
     align-items: center;
     position:relative;
     cursor: pointer;
-    width: 400px;
+    width: 380px;
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-    height: 495px;
-    margin: 40px;
+    height: 465px;
+    margin: 20px;
     align-content: center;
 }
 
@@ -149,6 +150,10 @@
 @media(max-width: 800px) {
     .contenido1 h1 {
         width: 90%;
+    }
+
+    .contenido1 {
+        gap: 0px;
     }
 }
 
